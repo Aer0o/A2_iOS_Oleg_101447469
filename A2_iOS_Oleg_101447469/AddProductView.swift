@@ -31,10 +31,10 @@ struct AddProductView: View {
                 newProduct.desc = desc
                 newProduct.price = Double(price) ?? 0
                 newProduct.provider = provider
-
+                
                 try? viewContext.save()
                 presentationMode.wrappedValue.dismiss()
-            
+            }
         }
         .navigationTitle("Add New Product")
     }
