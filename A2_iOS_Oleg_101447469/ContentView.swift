@@ -30,6 +30,22 @@ struct ContentView: View {
                         .padding()
                 }
             }
+            HStack {
+                Button("Previous") {
+                    if currentIndex > 0 {
+                        currentIndex -= 1
+                    }
+                }
+                .disabled(currentIndex == 0)
+
+                Button("Next") {
+                    if currentIndex < products.count - 1 {
+                        currentIndex += 1
+                    }
+                }
+                .disabled(currentIndex >= products.count - 1)
+            }
+            .padding()
             .navigationTitle("Product Details")
         }
     }
