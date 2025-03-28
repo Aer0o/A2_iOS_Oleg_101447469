@@ -23,5 +23,7 @@ struct ProductListView: View {
             }
         }
         .navigationTitle("All Products")
+        .navigationBarTitleDisplayMode(.inline)
+        .listStyle(.insetGrouped)
     }
 }
