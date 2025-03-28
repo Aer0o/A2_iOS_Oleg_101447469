@@ -46,8 +46,14 @@ struct ContentView: View {
                 .disabled(currentIndex >= products.count - 1)
             }
             .padding()
-            .navigationTitle("Product Details")
-        }
+            
+            NavigationLink("Add Product", destination: AddProductView())
+                    .padding()
+
+            NavigationLink("View All Products", destination: ProductListView())
+                    .padding()
+            
+        }.navigationTitle("Product Details")
     }
 }
 
