@@ -14,6 +14,7 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Product.name, ascending: true)]
     ) var products: FetchedResults<Product>
 
+
     @State private var currentIndex = 0
 
     var body: some View {

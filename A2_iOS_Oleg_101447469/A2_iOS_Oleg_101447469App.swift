@@ -17,4 +17,4 @@ struct A2_iOS_Oleg_101447469App: App {
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
-}
+
