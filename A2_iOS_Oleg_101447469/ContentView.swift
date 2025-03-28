@@ -7,6 +7,20 @@
 
 import SwiftUI
 
+struct ProductDetailsView: View {
+    let product: StoreProduct
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Name: \(product.name ?? "N/A")")
+            Text("Description: \(product.desc ?? "N/A")")
+            Text("Price: $\(product.price, specifier: "%.2f")")
+            Text("Provider: \(product.provider ?? "N/A")")
+        }
+        .padding()
+    }
+}
+
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(entity: StoreProduct.entity(), sortDescriptors: []) var products: FetchedResults<StoreProduct>
@@ -18,13 +32,7 @@ struct ContentView: View {
             VStack {
                 if products.indices.contains(currentIndex) {
                     let product = products[currentIndex]
-                    VStack(alignment: .leading, spacing: 10) {
-                        Text("Name: \(product.name ?? "N/A")")
-                        Text("Description: \(product.desc ?? "N/A")")
-                        Text("Price: $\(product.price, specifier: "%.2f")")
-                        Text("Provider: \(product.provider ?? "N/A")")
-                    }
-                    .padding()
+                    ProductDetailsView(product: product)
                 } else {
                     Text("No Products Available")
                         .padding()
