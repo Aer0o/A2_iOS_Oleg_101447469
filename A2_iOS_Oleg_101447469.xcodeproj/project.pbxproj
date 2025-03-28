@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34EC530B2D9707C60000C30B /* StoreProduct+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC530A2D9707C60000C30B /* StoreProduct+CoreDataProperties.swift */; };
-		34EC530C2D9707C60000C30B /* StoreProduct+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC53092D9707C60000C30B /* StoreProduct+CoreDataClass.swift */; };
+		34EC530B2D9707C60000C30B /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC530A2D9707C60000C30B /* Product+CoreDataProperties.swift */; };
+		34EC530C2D9707C60000C30B /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC53092D9707C60000C30B /* Product+CoreDataClass.swift */; };
 		34EC53142D970E410000C30B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 34EC53132D970E370000C30B /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +33,8 @@
 		34EC52D72D9705DC0000C30B /* A2_iOS_Oleg_101447469.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2_iOS_Oleg_101447469.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EC52EC2D9705DF0000C30B /* A2_iOS_Oleg_101447469Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = A2_iOS_Oleg_101447469Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34EC52F62D9705DF0000C30B /* A2_iOS_Oleg_101447469UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = A2_iOS_Oleg_101447469UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		34EC53092D9707C60000C30B /* StoreProduct+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StoreProduct+CoreDataClass.swift"; path = "Model/StoreProduct+CoreDataClass.swift"; sourceTree = "<group>"; };
-		34EC530A2D9707C60000C30B /* StoreProduct+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StoreProduct+CoreDataProperties.swift"; path = "Model/StoreProduct+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		34EC53092D9707C60000C30B /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Product+CoreDataClass.swift"; path = "Model/Product+CoreDataClass.swift"; sourceTree = "<group>"; };
+		34EC530A2D9707C60000C30B /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Product+CoreDataProperties.swift"; path = "Model/Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		34EC53132D970E370000C30B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,8 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				34EC53132D970E370000C30B /* .gitignore */,
-				34EC53092D9707C60000C30B /* StoreProduct+CoreDataClass.swift */,
-				34EC530A2D9707C60000C30B /* StoreProduct+CoreDataProperties.swift */,
+				34EC53092D9707C60000C30B /* Product+CoreDataClass.swift */,
+				34EC530A2D9707C60000C30B /* Product+CoreDataProperties.swift */,
 				34EC52D92D9705DC0000C30B /* A2_iOS_Oleg_101447469 */,
 				34EC52EF2D9705DF0000C30B /* A2_iOS_Oleg_101447469Tests */,
 				34EC52F92D9705DF0000C30B /* A2_iOS_Oleg_101447469UITests */,
@@ -249,8 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34EC530B2D9707C60000C30B /* StoreProduct+CoreDataProperties.swift in Sources */,
-				34EC530C2D9707C60000C30B /* StoreProduct+CoreDataClass.swift in Sources */,
+				34EC530B2D9707C60000C30B /* Product+CoreDataProperties.swift in Sources */,
+				34EC530C2D9707C60000C30B /* Product+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

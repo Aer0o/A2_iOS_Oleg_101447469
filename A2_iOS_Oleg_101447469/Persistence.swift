@@ -13,7 +13,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "ProductModel")
+        container = NSPersistentContainer(name: "A2_iOS_Oleg_101447469")
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
         }
@@ -27,13 +27,13 @@ struct PersistenceController {
 
     private func preloadSampleProducts() {
         let context = container.viewContext
-        let fetchRequest: NSFetchRequest<StoreProduct> = StoreProduct.fetchRequest()
+        let fetchRequest: NSFetchRequest<Product> = Product.fetchRequest()
         fetchRequest.fetchLimit = 1
 
         let count = (try? context.count(for: fetchRequest)) ?? 0
         if count == 0 {
             for i in 1...10 {
-                let product = StoreProduct(context: context)
+                let product = Product(context: context)
                 product.id = UUID()
                 product.name = "Product \(i)"
                 product.desc = "Description for product \(i)"

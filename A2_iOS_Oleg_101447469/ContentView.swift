@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductDetailsView: View {
-    let product: StoreProduct
+    let product: Product
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -23,7 +23,7 @@ struct ProductDetailsView: View {
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(entity: StoreProduct.entity(), sortDescriptors: []) var products: FetchedResults<StoreProduct>
+    @FetchRequest(entity: Product.entity(), sortDescriptors: []) var products: FetchedResults<Product>
     
     @State private var currentIndex = 0
 

@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ProductListView: View {
     @FetchRequest(
-        entity: StoreProduct.entity(),
-        sortDescriptors: [NSSortDescriptor(keyPath: \StoreProduct.name, ascending: true)]
-    ) var products: FetchedResults<StoreProduct>
+        entity: Product.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \Product.name, ascending: true)]
+    ) var products: FetchedResults<Product>
 
     var body: some View {
         List(products) { product in

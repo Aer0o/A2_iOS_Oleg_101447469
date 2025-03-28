@@ -25,7 +25,7 @@ struct AddProductView: View {
             TextField("Provider", text: $provider)
 
             Button("Save") {
-                let newProduct = StoreProduct(context: viewContext)
+                let newProduct = Product(context: viewContext)
                 newProduct.id = UUID()
                 newProduct.name = name
                 newProduct.desc = desc

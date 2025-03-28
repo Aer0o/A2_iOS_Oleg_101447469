@@ -7,7 +7,7 @@
         <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="provider" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="Product" representedClassName="StoreProduct" syncable="YES">
+    <entity name="Product" representedClassName=".Product" syncable="YES">
         <attribute name="desc" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
