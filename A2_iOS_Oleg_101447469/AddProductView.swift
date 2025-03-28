@@ -23,8 +23,8 @@ struct AddProductView: View {
             TextField("Price", text: $price)
                 .keyboardType(.decimalPad)
             TextField("Provider", text: $provider)
-
-            Button("Save") 
+            
+            Button("Save") {
                 let newProduct = Product(context: viewContext)
                 newProduct.id = UUID()
                 newProduct.name = name
@@ -34,7 +34,7 @@ struct AddProductView: View {
 
                 try? viewContext.save()
                 presentationMode.wrappedValue.dismiss()
-            }
+            
         }
         .navigationTitle("Add New Product")
     }
